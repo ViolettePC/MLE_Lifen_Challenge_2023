@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  lifen_app_dev:
+    build:
+      context: .
+      target: development
+    ports:
+      - 80:80

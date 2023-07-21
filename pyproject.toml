@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "mle-lifen-challenge-2023"
+version = "0.0.0"
+description = ""
+authors = ["Violette Poccard Chapuis <poccardviolette@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+ruff = "^0.0.278"
+uvicorn = "^0.23.1"
+fastapi = "^0.100.0"
+pre-commit = "^3.3.3"
+httpx = "^0.24.1"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.278"
+black = "^23.7.0"
+flake8 = "^6.0.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+ignore = ["E501"]
